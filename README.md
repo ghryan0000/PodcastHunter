@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# PodcastHunter Mono-repo
 
-# Run and deploy your AI Studio app
+This repository contains multiple implementations of the PodcastHunter application.
 
-This contains everything you need to run your app locally.
+## Directory Structure
 
-View your app in AI Studio: https://ai.studio/apps/drive/1pQfAJJXtBr63GMx1bNvuHKOHhsvvfmhD
+- [PodcastHunter-Electron/](./PodcastHunter-Electron): The original implementation using React, Electron, and Python.
+- [PodcastHunter-Swift/](./PodcastHunter-Swift): The native Apple Swift implementation (Work in Progress).
+- [shared-assets/](./shared-assets): Shared assets like icons and logos used across all implementations.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## Getting Started
 
+### Electron Version
+To run the original Electron version:
+1. `cd PodcastHunter-Electron`
+2. `npm install`
+3. Set your `GEMINI_API_KEY` in `.env.local`
+4. `npm run dev`
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Swift Version
+Open the [PodcastHunter-Swift/](./PodcastHunter-Swift) directory in Xcode to start development.
+
